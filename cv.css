@@ -1,0 +1,369 @@
+body
+{
+    border: 0.2rem solid #80808080;
+    display: flex;
+    margin: 0;
+    font-size: 28pt;
+    font: 2em "Open Sans", sans-serif;
+    font-family: Corbel, sans-serif;
+    color: #424242;
+
+}
+.bordure
+{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background: #FBC02D;
+    flex-wrap: wrap;
+}
+aside_picture
+{
+    
+    order: 0;
+    margin-top: 10%;
+}
+aside2
+{
+    background: #FBC02D;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: center;
+    order: 1;
+}
+aside
+{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background: #FBC02D;
+    justify-content: space-between;
+}
+.block:nth-child(1)
+{
+     align-items: center; 
+}
+.block:nth-child(2)
+{
+    
+}
+.block:nth-child(3)
+{
+    flex-grow: 1;
+}
+.block:nth-child(4)
+{
+    
+}
+h1
+{
+    margin-bottom: 0%;
+}
+h4
+{
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+h2
+{
+    border-bottom: #FBC02D solid;
+}
+h3
+{
+    padding: 10px 0px;
+    background: #424242;
+    color: #FBC02D;
+    font-size: 38pt;
+    margin: 0;
+    width: 100%;
+}
+h1, h2, h5
+{
+    color: black;
+}
+main
+{
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    order: 2;
+}
+header
+{
+    
+    margin: 12% 15%;
+    
+}
+main div
+{
+    flex: 1;
+}
+h1, h2, h3, h4
+{
+    text-transform: uppercase;
+}
+.portrait
+{
+   
+    height: 19rem;
+    width: 19rem;
+    background-color: grey;
+    border-radius: 50%;
+    border: 0.5rem solid #d2b503;
+}
+strong
+{
+    color: #FBC02D;
+    font-size: 50pt;
+
+}
+.block
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+.block div
+{
+    
+    /* text-align: left; */
+    color: #424242;
+}
+.contact
+{
+    margin: 5% 15%;
+
+}
+.fas fa-music
+{
+    border: solid;
+    border-radius: 50%;
+    padding: 25%;
+}
+.loisirs
+{
+    margin: 5%;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+#musicicon
+{
+    border: solid;
+    border-radius: 50%;
+    padding: 3%;
+}
+#basketicon
+{
+    border: solid;
+    border-radius: 50%;
+    padding: 3%;
+}
+#balanceicon
+{
+    border: solid;
+    border-radius: 50%;
+    padding: 3%;
+}
+#cinemaicon
+{
+    border: solid;
+    border-radius: 50%;
+    padding: 3%;
+}
+.aboutme
+{
+    display: flex;
+    flex-direction: column;
+    margin: 10% 15%;
+    justify-content: space-between;
+    width: 80%;
+    height: 100%;
+
+}
+.mainpage
+{
+    padding: 0% 10% 15% 15%;
+}
+span
+{
+    border-bottom: #FBC02D solid;
+}
+.icones
+{
+    color: #FBC02D;
+    size: 80%;
+}
+.experiencepro .table_content
+{
+    margin-left: 2%;
+}
+/* .mainpage p, h4
+{
+    color: #424242;
+} */
+
+#aside_contact_lowres, #aside_recherche_alternance
+{
+    display: none;
+}
+a
+{
+    color: #424242;
+}
+table
+{
+    width: 100%;
+    color: #424242;
+    font-family: Corbel, sans-serif;
+    padding: 3%;
+}
+.formation
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: right;
+}
+.table_formation
+{
+    display: flex;
+    flex-direction: column;
+}
+.table_formation:nth-child(1)
+{
+    font-size: 120%;
+}
+.table_content p
+{
+    margin-bottom: 1%;
+}
+.content_text
+{
+   
+    margin-top: 0%;
+    color: black !important;
+    font-size: 80%;
+}
+ul
+{
+    text-align: left;
+    font-size: 92%;
+    margin: 0% 0% 0% 5%;
+    padding: 0%;
+}
+li
+{
+    margin-bottom: 3%;
+}
+.small_title
+{
+    text-align: left;
+}
+section
+{
+    text-align: left;
+    padding-left: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.expblock:nth-child(1)
+{
+    text-align: left;
+    color: black !important;
+}
+.expblock:nth-child(2)
+{
+    text-align: right;
+}
+.e
+@media screen and (max-width: 2500px)
+{
+    body 
+    {
+        flex-direction: row;
+    }
+    .bordure
+    {
+        display: flex;
+        flex-direction: row;
+    }
+    aside
+    {
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 992px)
+{
+    body 
+    {
+        flex-direction: column;
+    }
+    .bordure:nth-child(2), .bordure:nth-child(3), .bordure:nth-child(4)
+    {
+        display: none;
+    }
+    .bordure
+    {
+        display: flex;
+        flex-direction: row;
+        margin: 12%;
+    }
+    asidepicture
+    {
+        order: 0;
+    }
+    aside2
+    {
+        order: 2;
+    }
+    main
+    {
+        order: 1;
+        text-align: center;
+    }
+    .block
+    {
+        margin: 0%;
+    }
+    .competences
+    {
+        text-align: left;
+    }
+    #aside_contact_lowres
+    {
+        display: flex;
+        margin: 0%;
+        order: 2;
+    }
+    #aside_recherche_alternance
+    {
+        display: flex;
+        margin: 0%;
+    }
+    #aside_recherche_alternance h3
+    {
+        margin: 23% 0%;
+    }
+    header
+    {
+        margin: 0%;
+    }
+    h2, h4
+    {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 768px)
+{
+   
+}
+@media screen and (max-width: 576px)
+{
+    
+    
+}
