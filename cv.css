@@ -39,6 +39,7 @@ aside
     flex: 1;
     background: #FBC02D;
     justify-content: space-between;
+    border: #424242 inset;
 }
 .block:nth-child(1)
 {
@@ -88,6 +89,7 @@ main
     flex: 2;
     flex-direction: column;
     order: 2;
+    border: #424242 inset;
 }
 header
 {
@@ -294,6 +296,7 @@ section
     aside
     {
         flex: 1;
+        border: #424242 inset;
     }
 }
 
