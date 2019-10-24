@@ -246,8 +246,7 @@ table
 {
    
     margin-top: 0%;
-    color: black !important;
-    font-size: 80%;
+    color: #424242;
 }
 ul
 {
@@ -314,7 +313,7 @@ section
     {
         display: flex;
         flex-direction: row;
-        margin: 12%;
+        margin: 8%;
     }
     asidepicture
     {
@@ -328,6 +327,10 @@ section
     {
         order: 1;
         text-align: center;
+    }
+    .mainpage
+    {
+        padding: 0% 8% 15% 8%;
     }
     .block
     {
@@ -350,7 +353,7 @@ section
     }
     #aside_recherche_alternance h3
     {
-        margin: 23% 0%;
+        margin: 5% 0%;
     }
     header
     {
@@ -360,10 +363,174 @@ section
     {
         text-align: center;
     }
+    h2
+    {
+        font-size: 36px;
+    }
+    .portrait
+    {
+        width: 13rem;
+        height: 13rem;
+    }
+    h3 .bordure
+    {
+        margin: 3px;
+        font-size: 29pt;
+    }
+    header h4
+    {
+        font-size: 26px;
+    }
+    header h3
+    {
+        font-size: 39px;
+    }
+    section
+    {
+        padding: 0;
+    }
+    .formation
+    {
+        flex-direction: column;
+        text-align: center;
+        color: black;
+    }
+    .pages
+    {
+        border-bottom: solid;
+    }
+    .table_content
+    {
+        font-size: 23px;
+    }
+    .table_content p
+    {
+        margin-bottom: 8%;
+        font-size: 23px;
+    }
+    .content_text
+    {
+        font-size: 23px;
+    }
+    h4
+    {
+        margin-bottom: 8%;
+    }
 }
-@media screen and (max-width: 768px)
+@media screen and (max-width: 450px)
 {
-   
+    body 
+    {
+        flex-direction: column;
+    }
+    .bordure:nth-child(2), .bordure:nth-child(3), .bordure:nth-child(4)
+    {
+        display: none;
+    }
+    .bordure
+    {
+        display: flex;
+        flex-direction: row;
+        margin: 1%;
+    }
+    asidepicture
+    {
+        order: 0;
+    }
+    aside2
+    {
+        order: 2;
+    }
+    main
+    {
+        order: 1;
+        text-align: center;
+    }
+    .mainpage
+    {
+        padding: 0% 8% 15% 8%;
+    }
+    .block
+    {
+        margin: 0%;
+    }
+    .competences
+    {
+        text-align: left;
+    }
+    #aside_contact_lowres
+    {
+        display: flex;
+        margin: 0%;
+        order: 2;
+    }
+    #aside_recherche_alternance
+    {
+        display: flex;
+        margin: 0%;
+    }
+    #aside_recherche_alternance h3
+    {
+        margin: 5% 0%;
+    }
+    header
+    {
+        margin: 0%;
+        margin-top: -10%;
+    }
+    h2, h4
+    {
+        text-align: center;
+    }
+    h2
+    {
+        font-size: 36px;
+    }
+    .portrait
+    {
+        width: 10rem;
+        height: 10rem;
+    }
+    h3 .bordure
+    {
+        margin: 3px;
+        font-size: 29pt;
+    }
+    header h4
+    {
+        font-size: 26px;
+    }
+    header h3
+    {
+        font-size: 30px;
+    }
+    section
+    {
+        padding: 0;
+    }
+    .formation
+    {
+        flex-direction: column;
+        text-align: center;
+        color: black;
+    }
+    .pages
+    {
+        border-bottom: solid;
+    }
+    .table_content
+    {
+        font-size: 23px;
+    }
+    .table_content p
+    {
+        margin-bottom: 8%;
+        font-size: 23px;
+    }
+    .content_text
+    {
+        font-size: 23px;
+    }
 }
 @media screen and (max-width: 576px)
 {
