@@ -74,7 +74,6 @@ h3
     padding: 10px 0px;
     background: #424242;
     color: #FBC02D;
-    font-size: 38pt;
     margin: 0;
     width: 100%;
 }
@@ -320,6 +319,10 @@ section
         flex-direction: row;
         margin: 8%;
     }
+    #aside_about
+    {
+        display: none;
+    }
     #aside_picture
     {
         order: 0;
@@ -368,10 +371,10 @@ section
     {
         text-align: center;
     }
-    h2
+    /* h2
     {
         font-size: 36px;
-    }
+    } */
     .portrait
     {
         width: 13rem;
@@ -380,15 +383,15 @@ section
     h3 .bordure
     {
         margin: 3px;
-        font-size: 29pt;
+        /* font-size: 29pt; */
     }
     header h4
     {
-        font-size: 26px;
+        /* font-size: 26px; */
     }
     header h3
     {
-        font-size: 39px;
+        /* font-size: 39px; */
     }
     section
     {
@@ -406,7 +409,7 @@ section
     }
     .table_content, .content_text, .table_content p
     {
-        font-size: 23px;
+        /* font-size: 23px; */
     }
     .table_content p
     {
@@ -484,7 +487,7 @@ section
     }
     h2
     {
-        font-size: 36px;
+        /* font-size: 36px; */
     }
     .portrait
     {
@@ -494,16 +497,16 @@ section
     h3 .bordure
     {
         margin: 3px;
-        font-size: 29pt;
+        /* font-size: 29pt; */
     }
-    header h4
+    /* header h4
     {
         font-size: 26px;
     }
     header h3
     {
         font-size: 30px;
-    }
+    } */
     section
     {
         padding: 0;
@@ -518,18 +521,18 @@ section
     {
         border-bottom: solid;
     }
-    .table_content
+    /* .table_content
     {
         font-size: 23px;
-    }
+    } */
     .table_content p
     {
         margin-bottom: 8%;
-        font-size: 23px;
+        /* font-size: 23px; */
     }
     .content_text
     {
-        font-size: 23px;
+        /* font-size: 23px; */
     }
 }
 @media screen and (max-width: 576px)
