@@ -1,1 +1,560 @@
+html, body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    height: 100%;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+header{
+    background-color: #51936b;;
+    display: flex;
+    
+}
+main{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-self: center;
+    padding: 1%;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 5%;
+    width: 90%;
+    
+}
+footer{
+    background-color: #51936b;;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+}
+footer a
+{
+    padding: 1% 3%;
+}
+h1
+{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+}
+article h1
+{
+  font-size: 45px;
+}
+main img
+{
+    width: inherit;
+}
+.menus
+{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+section
+{
+    display: flex;
+    width: 50%;
+}
+.main_content
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+.soon
+{
+    display: flex;
+    justify-content: center;
+    background: #51936b;;
+    margin: 2%;
+    border-radius: 20px;
+    padding: 1%;
+}
+a
+{
+    text-decoration: none;
+    color: #FCCA46;
+}
+.soon p
+{
+    margin: 0;
+}
+.saving
+{
+    font-size: 40px;
+    margin-bottom: -10% !important;
+}
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+h2:before, h2:after {
+  content: "";
+  height: 3px;
+  background: black;
+  flex-grow: 1;
+  margin: 0% 70px;
+}
+  
+strong:after {
+    content: '';
+  width: 0; height: 3px;
+  display: block;
+  margin-top: 2px;
+  background: rgb(179, 0, 0);
+  transition: width .2s ease;
+  -webkit-transition: width .2s ease;
+}  
 
+strong:after {
+  content: '';
+  width: 0; height: 3px;
+  display: block;
+  margin-top: 2px;
+  background: rgb(17, 1, 1);
+  transition: width .2s ease;
+  -webkit-transition: width .2s ease;
+}  
+strong:hover:after{
+  width: 100%;
+  background: black;
+} 
+.menu2_frame h2:nth-child(2) strong:after
+{
+  background: orange;
+}
+.menu2_frame h2:nth-child(4) strong:after
+{
+  background: rgb(168, 100, 185);
+}
+.menu2_frame h2:nth-child(6) strong:after
+{
+  background: rgb(128, 20, 128);
+}
+
+.menu3_frame h2:nth-child(2) strong:after
+{
+  background: blue;
+}
+.menu3_frame h2:nth-child(4) strong:after
+{
+  background: rgb(56, 53, 255);
+}
+.menu3_frame h2:nth-child(6) strong:after
+{
+  background: rgb(46, 143, 235);
+}
+
+.menu4_frame h2:nth-child(2) strong:after
+{
+  background: rgb(46, 209, 46);
+}
+.menu4_frame h2:nth-child(4) strong:after
+{
+  background: rgb(7, 128, 7);
+}
+.menu4_frame h2:nth-child(6) strong:after
+{
+  background: rgb(11, 77, 5);
+}
+
+
+
+.menus:hover
+{
+    transform: scale(1.30);
+    opacity: 0.8;
+    transition: opacity 1.2s ease;
+}
+.layout_item 
+{
+    overflow: hidden;
+    box-shadow: 0px 0px 9px -5px rgb(0, 0, 0);
+    -webkit-box-shadow: 0px 0px 9px -5px rgb(0, 0, 0);
+    margin: 2% 1%;
+}
+.layout_item a
+{
+    width: 100%;
+}
+
+article
+{
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+}
+.menu1_frame
+{
+    background: #f0d4da;
+    font-family: 'Courgette', 'Niconne', cursive, 'Courgette', 'Satisfy';
+    padding: 2%;
+    
+}
+.menu2_frame
+{
+    background: #eeebeb;
+    font-family: 'Courgette', 'Niconne', cursive, 'Satisfy';
+    padding: 2%;
+}
+.menu3_frame
+{
+    background: #e5fdff;
+    font-family: 'Courgette', cursive, 'Satisfy';
+    padding: 2%;
+}
+.menu4_frame
+{
+    background: #e2ffdd87;
+    font-family: 'Courgette', cursive, 'Satisfy';
+    padding: 2%;
+}
+.menu1_frame table
+{
+    display: flex;
+    text-align: initial;
+    margin: 4% 15%;
+    flex-direction: column;
+}
+.menu2_frame table
+{
+    display: flex;
+    text-align: initial;
+    margin: 4% 15%;
+    flex-direction: column;
+}
+.menu3_frame table
+{
+  display: flex;
+  text-align: initial;
+  margin: 4% 15%;
+  flex-direction: column;
+}
+.menu4_frame table
+{
+  display: flex;
+  text-align: initial;
+  margin: 4% 15%;
+  flex-direction: column;
+}
+
+
+.menu2_frame h2:nth-child(2):before, .menu2_frame h2:nth-child(2):after
+{
+  background: orange;
+}
+.menu2_frame table:nth-child(3), .menu2_frame h2:nth-child(2)
+{
+    color: #df9000;
+}
+.menu2_frame h2:nth-child(4):before, .menu2_frame h2:nth-child(4):after
+{
+  background: rgb(168, 100, 185);
+}
+.menu2_frame table:nth-child(5), .menu2_frame h2:nth-child(4)
+{
+    color: rgb(168, 100, 185);
+}
+.menu2_frame h2:nth-child(6):before, .menu2_frame h2:nth-child(6):after
+{
+  background: rgb(128, 20, 128);
+}
+.menu2_frame table:nth-child(7), .menu2_frame h2:nth-child(6)
+{
+    color: rgb(128, 20, 128);
+}
+
+
+.menu3_frame h2:nth-child(2):before, .menu3_frame h2:nth-child(2):after
+{
+  background: blue;
+}
+
+.menu3_frame h2:nth-child(4):before, .menu3_frame h2:nth-child(4):after
+{
+  background: rgb(56, 53, 255);
+}
+
+.menu3_frame h2:nth-child(6):before, .menu3_frame h2:nth-child(6):after
+{
+  background: rgb(46, 143, 235);
+}
+
+
+.menu4_frame h2:nth-child(2):before, .menu4_frame h2:nth-child(2):after
+{
+  background: rgb(46, 209, 46);
+}
+
+.menu4_frame h2:nth-child(4):before, .menu4_frame h2:nth-child(4):after
+{
+  background: rgb(7, 128, 7);
+}
+
+.menu4_frame h2:nth-child(6):before, .menu4_frame h2:nth-child(6):after
+{
+  background: rgb(11, 77, 5);
+}
+
+
+td:nth-child(1)
+{
+    font-weight: lighter;
+}
+.menu1_frame td:nth-child(1)
+{
+  width: 100%;
+}
+.menu2_frame td:nth-child(1)
+{
+  width: 100%;
+}
+.menu3_frame td:nth-child(1)
+{
+  width: 100%;
+}
+.menu4_frame td:nth-child(1)
+{
+  width: 100%;
+}
+td:nth-child(2)
+{
+    padding: 1% 60%;
+}
+.menu1_frame td:nth-child(2)
+{
+  padding: 1% 20%;
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+.menu2_frame td:nth-child(2)
+{
+  padding: 1% 20%;
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+.menu3_frame td:nth-child(2)
+{
+  padding: 1% 20%;
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+.menu4_frame td:nth-child(2)
+{
+  padding: 1% 20%;
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+i
+{
+    background: -webkit-linear-gradient(left, rgb(230, 109, 109), rgb(245, 192, 131));
+    background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+thead
+{
+    margin-bottom: 3%;
+}
+tbody
+{
+    margin: 3%;
+}
+.blank_row
+{
+    height: 16px !important; /* overwrites any other rules */
+}
+.menu2title
+{
+    background: -webkit-linear-gradient(left, orange, purple);
+    background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 10% auto;
+}
+.menu3title
+{
+    background: -webkit-linear-gradient(left, rgb(0, 0, 163), rgb(67, 130, 247));
+    background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 10% auto;
+}
+.menu4title
+{
+    background: -webkit-linear-gradient(left, green, rgb(127, 238, 83));
+    background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 10% auto;
+}
+
+
+
+@keyframes blink {
+    /**
+     * At the start of the animation the dot
+     * has an opacity of .2
+     */
+    0% {
+      opacity: .2;
+    }
+    /**
+     * At 20% the dot is fully visible and
+     * then fades out slowly
+     */
+    20% {
+      opacity: 1;
+    }
+    /**
+     * Until it reaches an opacity of .2 and
+     * the animation can start again
+     */
+    100% {
+      opacity: .2;
+    }
+}
+
+.saving span {
+    /**
+     * Use the blink animation, which is defined above
+     */
+    animation-name: blink;
+    /**
+     * The animation should take 1.4 seconds
+     */
+    animation-duration: 1.4s;
+    /**
+     * It will repeat itself forever
+     */
+    animation-iteration-count: infinite;
+    /**
+     * This makes sure that the starting style (opacity: .2)
+     * of the animation is applied before the animation starts.
+     * Otherwise we would see a short flash or would have
+     * to set the default styling of the dots to the same
+     * as the animation. Same applies for the ending styles.
+     */
+    animation-fill-mode: both;
+}
+
+.saving span:nth-child(2) {
+    /**
+     * Starts the animation of the third dot
+     * with a delay of .2s, otherwise all dots
+     * would animate at the same time
+     */
+    animation-delay: .2s;
+}
+
+.saving span:nth-child(3) {
+    /**
+     * Starts the animation of the third dot
+     * with a delay of .4s, otherwise all dots
+     * would animate at the same time
+     */
+    animation-delay: .4s;
+}
+
+
+
+
+.footer_wiggle:hover {
+    animation: shake 1.02s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-2px, 0, 0);
+    }
+  
+    20%, 80% {
+      transform: translate3d(3px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-5px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(5px, 0, 0);
+    }
+  }
+
+  @media (min-width: 1200px) {
+    article {
+      width: 1140px;
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    article {
+      width: 940px;
+    }
+    td:nth-child(2) {
+        padding: 1% 20%;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    article {
+      width: 720px;
+    }
+    td:nth-child(2) {
+        padding: 1% 20%;
+    }
+    h2:before, h2:after {
+        margin: 0% 50px;
+      }
+    section {
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    article {
+      width: 540px;
+    }
+    td:nth-child(2) {
+        padding: 1% 20%;
+    }
+    h2:before, h2:after {
+        margin: 0% 40px;
+      }
+    section {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 575.98px) {
+    article {
+      width: 90%;
+    }
+    td:nth-child(2) {
+        padding: 1% 20%;
+    }
+    h2:before, h2:after {
+        margin: 0% 30px;
+      }
+    section {
+    width: 100%;
+    }
+  }
