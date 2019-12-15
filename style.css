@@ -117,15 +117,6 @@ strong:after {
   -webkit-transition: width .2s ease;
 }  
 
-strong:after {
-  content: '';
-  width: 0; height: 3px;
-  display: block;
-  margin-top: 2px;
-  background: rgb(17, 1, 1);
-  transition: width .2s ease;
-  -webkit-transition: width .2s ease;
-}  
 strong:hover:after{
   width: 100%;
   background: black;
@@ -220,34 +211,14 @@ article
     font-family: 'Courgette', cursive, 'Satisfy';
     padding: 2%;
 }
-.menu1_frame table
+.menu1_frame table, .menu2_frame table, .menu3_frame table, .menu4_frame table
 {
     display: flex;
     text-align: initial;
     margin: 4% 15%;
     flex-direction: column;
 }
-.menu2_frame table
-{
-    display: flex;
-    text-align: initial;
-    margin: 4% 15%;
-    flex-direction: column;
-}
-.menu3_frame table
-{
-  display: flex;
-  text-align: initial;
-  margin: 4% 15%;
-  flex-direction: column;
-}
-.menu4_frame table
-{
-  display: flex;
-  text-align: initial;
-  margin: 4% 15%;
-  flex-direction: column;
-}
+
 
 
 .menu2_frame h2:nth-child(2):before, .menu2_frame h2:nth-child(2):after
@@ -312,54 +283,23 @@ td:nth-child(1)
 {
     font-weight: lighter;
 }
-.menu1_frame td:nth-child(1)
+.menu1_frame td:nth-child(1), .menu2_frame td:nth-child(1), .menu3_frame td:nth-child(1), .menu4_frame td:nth-child(1)
 {
   width: 100%;
 }
-.menu2_frame td:nth-child(1)
-{
-  width: 100%;
-}
-.menu3_frame td:nth-child(1)
-{
-  width: 100%;
-}
-.menu4_frame td:nth-child(1)
-{
-  width: 100%;
-}
+
 td:nth-child(2)
 {
     padding: 1% 60%;
 }
-.menu1_frame td:nth-child(2)
+.menu1_frame td:nth-child(2), .menu2_frame td:nth-child(2), .menu3_frame td:nth-child(2), .menu4_frame td:nth-child(2)
 {
   padding: 1% 20%;
   display: flex;
   justify-content: end;
   width: 100%;
 }
-.menu2_frame td:nth-child(2)
-{
-  padding: 1% 20%;
-  display: flex;
-  justify-content: end;
-  width: 100%;
-}
-.menu3_frame td:nth-child(2)
-{
-  padding: 1% 20%;
-  display: flex;
-  justify-content: end;
-  width: 100%;
-}
-.menu4_frame td:nth-child(2)
-{
-  padding: 1% 20%;
-  display: flex;
-  justify-content: end;
-  width: 100%;
-}
+
 i
 {
     background: -webkit-linear-gradient(left, rgb(230, 109, 109), rgb(245, 192, 131));
@@ -382,92 +322,60 @@ tbody
 .menu2title
 {
     background: -webkit-linear-gradient(left, orange, purple);
-    background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin: 10% auto;
+
 }
 .menu3title
 {
     background: -webkit-linear-gradient(left, rgb(0, 0, 163), rgb(67, 130, 247));
-    background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin: 10% auto;
+
 }
 .menu4title
 {
     background: -webkit-linear-gradient(left, green, rgb(127, 238, 83));
-    background-clip: text;
+
+}
+.menu2title, .menu3title, .menu4title
+{
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 10% auto;
 }
+header img {
+  width: 20%;
+}
 
-
+.menu1_frame .fas {
+  font-size: 90px
+}
 
 @keyframes blink {
-    /**
-     * At the start of the animation the dot
-     * has an opacity of .2
-     */
+ 
     0% {
       opacity: .2;
     }
-    /**
-     * At 20% the dot is fully visible and
-     * then fades out slowly
-     */
+ 
     20% {
       opacity: 1;
     }
-    /**
-     * Until it reaches an opacity of .2 and
-     * the animation can start again
-     */
+
     100% {
       opacity: .2;
     }
 }
 
 .saving span {
-    /**
-     * Use the blink animation, which is defined above
-     */
     animation-name: blink;
-    /**
-     * The animation should take 1.4 seconds
-     */
     animation-duration: 1.4s;
-    /**
-     * It will repeat itself forever
-     */
     animation-iteration-count: infinite;
-    /**
-     * This makes sure that the starting style (opacity: .2)
-     * of the animation is applied before the animation starts.
-     * Otherwise we would see a short flash or would have
-     * to set the default styling of the dots to the same
-     * as the animation. Same applies for the ending styles.
-     */
     animation-fill-mode: both;
 }
 
 .saving span:nth-child(2) {
-    /**
-     * Starts the animation of the third dot
-     * with a delay of .2s, otherwise all dots
-     * would animate at the same time
-     */
     animation-delay: .2s;
 }
 
 .saving span:nth-child(3) {
-    /**
-     * Starts the animation of the third dot
-     * with a delay of .4s, otherwise all dots
-     * would animate at the same time
-     */
     animation-delay: .4s;
 }
 
@@ -511,6 +419,9 @@ tbody
     }
     td:nth-child(2) {
         padding: 1% 20%;
+    }
+    section {
+      width: 100%;
     }
   }
   
